@@ -579,7 +579,7 @@ namespace vMenuClient
             {
                 OnlinePlayersMenu = new OnlinePlayers();
                 var menu = OnlinePlayersMenu.GetMenu();
-                var button = new MenuItem("Online Players", "All currently connected players.")
+                var button = new MenuItem("👥  Online Players", "All currently connected players.")
                 {
                     Label = "→→→"
                 };
@@ -599,7 +599,7 @@ namespace vMenuClient
             {
                 BannedPlayersMenu = new BannedPlayers();
                 var menu = BannedPlayersMenu.GetMenu();
-                var button = new MenuItem("Banned Players", "View and manage all banned players in this menu.")
+                var button = new MenuItem("🚫  Banned Players", "View and manage all banned players in this menu.")
                 {
                     Label = "→→→"
                 };
@@ -614,7 +614,7 @@ namespace vMenuClient
                 };
             }
 
-            var playerSubmenuBtn = new MenuItem("Player Related Options", "Open this submenu for player related subcategories.") { Label = "→→→" };
+            var playerSubmenuBtn = new MenuItem("👤  Player Related Options", "Open this submenu for player related subcategories.") { Label = "→→→" };
             Menu.AddMenuItem(playerSubmenuBtn);
 
             // Add the player options menu.
@@ -629,7 +629,7 @@ namespace vMenuClient
                 AddMenu(PlayerSubmenu, menu, button);
             }
 
-            var vehicleSubmenuBtn = new MenuItem("Vehicle Related Options", "Open this submenu for vehicle related subcategories.") { Label = "→→→" };
+            var vehicleSubmenuBtn = new MenuItem("🚘  Vehicle Related Options", "Open this submenu for vehicle related subcategories.") { Label = "→→→" };
             Menu.AddMenuItem(vehicleSubmenuBtn);
             // Add the vehicle options Menu.
             if (IsAllowed(Permission.VOMenu))
@@ -706,7 +706,7 @@ namespace vMenuClient
                 AddMenu(PlayerSubmenu, menu2, button2);
             }
 
-            var worldSubmenuBtn = new MenuItem("World Related Options", "Open this submenu for world related subcategories.") { Label = "→→→" };
+            var worldSubmenuBtn = new MenuItem("🌏  World Related Options", "Open this submenu for world related subcategories.") { Label = "→→→" };
             Menu.AddMenuItem(worldSubmenuBtn);
 
             // Add the time options menu.
@@ -777,7 +777,7 @@ namespace vMenuClient
             {
                 VoiceChatSettingsMenu = new VoiceChat();
                 var menu = VoiceChatSettingsMenu.GetMenu();
-                var button = new MenuItem("Voice Chat Settings", "Change Voice Chat options here.")
+                var button = new MenuItem("🎙  Voice Chat Settings", "Change Voice Chat options here.")
                 {
                     Label = "→→→"
                 };
@@ -787,7 +787,7 @@ namespace vMenuClient
             {
                 RecordingMenu = new Recording();
                 var menu = RecordingMenu.GetMenu();
-                var button = new MenuItem("Recording Options", "In-game recording options.")
+                var button = new MenuItem("🎥  Recording Options", "In-game recording options.")
                 {
                     Label = "→→→"
                 };
@@ -798,7 +798,7 @@ namespace vMenuClient
             {
                 MiscSettingsMenu = new MiscSettings();
                 var menu = MiscSettingsMenu.GetMenu();
-                var button = new MenuItem("Misc Settings", "Miscellaneous vMenu options/settings can be configured here. You can also save your settings in this menu.")
+                var button = new MenuItem("⚙️  Misc Settings", "Miscellaneous vMenu options/settings can be configured here. You can also save your settings in this menu.")
                 {
                     Label = "→→→"
                 };
@@ -808,7 +808,7 @@ namespace vMenuClient
             // Add About Menu.
             AboutMenu = new About();
             var sub = AboutMenu.GetMenu();
-            var btn = new MenuItem("About vMenu", "Information about vMenu.")
+            var btn = new MenuItem("❓  About vMenu", "Information about vMenu.")
             {
                 Label = "→→→"
             };
